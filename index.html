@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>KIDZ CLUB | HOME</title>
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+  </head>
+  <body>
+    <!--------------------Header--------------------->
+    <header>
+      <div class="container header-box">
+        <img src="./assets/logo@0.5x.png" alt="" class="logo" />
+        <nav>
+          <ul class="navlinks">
+            <li class="items"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./index.html">Sports</a></li>
+            <li class="items">
+              <a href="./index.html">Music </a>
+            </li>
+            <li class="items">
+              <a href="./pages/booking.html">General </a>
+            </li>
+            <li class="items">
+              <a href="./pages/booking.html">Technology </a>
+            </li>
+            <li class="items">
+              <a href="./pages/booking.html">Contact </a>
+            </li>
+            <li onclick="showSidebar()" class="hamburger-icon">
+              <ion-icon name="menu-outline"></ion-icon>
+            </li>
+          </ul>
+          <ul class="sidebar">
+            <li onclick="closeSidebar()" class="close-icon">
+              <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+            </li>
+            <li class="items"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./index.html">Activities</a></li>
+            <li class="items">
+              <a href="./index.html">About Us </a>
+            </li>
+            <li class="items">
+              <a href="./pages/booking.html">Bookings </a>
+            </li>
+            <img src="./assets/Logo_Kidz_club-removebg-preview.png" alt="" />
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!------------ Hero Section--------------->
+    <section class="hero-section">
+      <div class="hero-section__content">
+        <h1>
+          <span> Book your</span>
+          <span> tickets for</span>
+          <span id="text"> Music</span>
+        </h1>
+        <p>
+          Safe, secure, reliable ticketing. Your ticket to live entertainment!
+        </p>
+      </div>
+    </section>
+
+    <!----------------- Booking Section----------------->
+    <section class="booking-section">
+      <div class="booking-section-box">
+        <h5>WELCOME TO TEKETAT</h5>
+        <h3>WHAT ARE YOU LOOKING FOR?</h3>
+        <form action="">
+          <div class="search-bar">
+            <a href=""> <i class="far fa-search"></i></a>
+
+            <input type="text" />
+          </div>
+          <div class="booking-fields">
+            <div>
+              <label for="cars">Choose a City</label>
+              <div>
+                <span><img src="./assets/city 1.jpg" alt="" /></span>
+
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="birthday">Select Date:</label>
+
+              <div>
+                <span><img src="./assets/calender.jpg" alt="" /></span>
+
+                <input type="date" id="birthday" name="birthday" />
+              </div>
+            </div>
+            <div>
+              <label for="cars">Select an Event</label>
+              <div>
+                <span><img src="./assets/movie.png" alt="" /></span>
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!------------Subscribe Section------------->
+    <section class="subscribe-section">
+      <div class="subscribe-section__bg">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="subscribe-section__content container">
+        <h5>Subscribe to teketat</h5>
+        <h3>TO GET EXCLUSIVE BENIFITS</h3>
+        <form action="">
+          <div>
+            <input type="email" placeholder="Your Email Address" />
+            <button>Subscribe</button>
+          </div>
+        </form>
+        <span>We respect your privacy, so we never share your info</span>
+      </div>
+    </section>
+    <!----------------- Footer-------------------->
+    <footer>
+      <div class="footer-box">
+        <div class="footer-top container">
+          <img src="./assets/logo@0.5x.png" alt="" />
+          <div>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <hr class="container" />
+        <div class="footer-bottom container">
+          <p>Copyright © 2024. All Rights Reserved By Teketat</p>
+          <div>
+            <nav>
+              <a href="">Term Of Use</a>
+              <a href="">Privacy Policy</a>
+              <a href="">FAQ</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Hero Section -->
+    <!-- <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/daycare 2.jpg" alt="" />
+          <div class="swiper-slide-content">
+            <div class="container">
+              <div>
+                <h1>
+                  <span> Live in the sunshine,</span>
+                  <span>Swim in the sea,</span>
+                  <span>Drink the wild air</span>
+                </h1>
+
+                <button>
+                  <a href="./pages/booking.html">Book Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/daycare 3.jpg" alt="" />
+          <div class="swiper-slide-content">
+            <div class="container">
+              <div>
+                <h1>
+                  <span> Live in the sunshine,</span>
+                  <span>Swim in the sea,</span>
+                  <span>Drink the wild air</span>
+                </h1>
+
+                <button>
+                  <a href="./pages/booking.html">Book Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/daycare 4.jpg" alt="" />
+          <div class="swiper-slide-content">
+            <div class="container">
+              <div>
+                <h1>
+                  <span> Live in the sunshine,</span>
+                  <span>Swim in the sea,</span>
+                  <span>Drink the wild air</span>
+                </h1>
+
+                <button>
+                  <a href="./pages/booking.html">Book Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/daycare 2.jpg" alt="" />
+          <div class="swiper-slide-content">
+            <div class="container">
+              <div>
+                <h1>
+                  <span> Live in the sunshine,</span>
+                  <span>Swim in the sea,</span>
+                  <span>Drink the wild air</span>
+                </h1>
+
+                <button>
+                  <a href="./pages/booking.html">Book Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div> -->
+  </body>
+  <script src="./js/function.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script>
+    // Main Swiper
+    const swiper = new Swiper(".swiper", {
+      direction: "vertical",
+      loop: true,
+      speed: 2000,
+      centeredSlides: true,
+
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: true,
+        reverseDirection: true,
+      },
+      controller: {
+        inverse: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-prev",
+        prevEl: ".swiper-button-next",
+      },
+    });
+  </script>
+  <script>
+    // List of sentences
+    var _CONTENT = ["Sports", "Music", "General", "Technology"];
+
+    // Current sentence being processed
+    var _PART = 0;
+
+    // Character number of the current sentence being processed
+    var _PART_INDEX = 0;
+
+    // Holds the handle returned from setInterval
+    var _INTERVAL_VAL;
+
+    // Element that holds the text
+    var _ELEMENT = document.querySelector("#text");
+
+    // Implements typing effect
+    function Type() {
+      var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+      _ELEMENT.innerHTML = text;
+      _PART_INDEX++;
+
+      // If full sentence has been displayed then start to delete the sentence after some time
+      if (text === _CONTENT[_PART]) {
+        clearInterval(_INTERVAL_VAL);
+        setTimeout(function () {
+          _INTERVAL_VAL = setInterval(Delete, 100);
+        }, 1500);
+      }
+    }
+
+    // Implements deleting effect
+    function Delete() {
+      var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+      _ELEMENT.innerHTML = text;
+      _PART_INDEX--;
+
+      // If sentence has been deleted then start to display the next sentence
+      if (text === "") {
+        clearInterval(_INTERVAL_VAL);
+
+        // If last sentence then display the first one, else move to the next
+        if (_PART == _CONTENT.length - 1) _PART = 0;
+        else _PART++;
+        _PART_INDEX = 0;
+
+        // Start to display the next sentence after some time
+        setTimeout(function () {
+          _INTERVAL_VAL = setInterval(Type, 50);
+        }, 50);
+      }
+    }
+
+    // Start the typing effect on load
+    _INTERVAL_VAL = setInterval(Type, 100);
+  </script>
+</html>

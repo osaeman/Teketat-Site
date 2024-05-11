@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>KIDZ CLUB | Gallery</title>
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/responsive.css" />
+    <link rel="stylesheet" href="../style/date.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="booking-header">
+      <div class="container header-box">
+        <img src="../assets/Logo Kidz club.png" alt="" class="logo" />
+        <nav>
+          <ul class="navlinks">
+            <li class="items"><a href="../index.html">Home</a></li>
+            <li class="items"><a href="../index.html">Activities</a></li>
+            <li class="items">
+              <a href="../index.html">About Us </a>
+            </li>
+            <li class="items">
+              <a href="./booking.html">Bookings </a>
+            </li>
+
+            <li onclick="showSidebar()" class="hamburger-icon">
+              <ion-icon name="menu-outline"></ion-icon>
+            </li>
+          </ul>
+          <ul class="sidebar">
+            <li onclick="closeSidebar()" class="close-icon">
+              <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+            </li>
+            <li class="items"><a href="../index.html">Home</a></li>
+            <li class="items"><a href="../index.html">Activities</a></li>
+            <li class="items">
+              <a href="../index.html">About Us </a>
+            </li>
+            <li class="items">
+              <a href="./booking.html">Bookings </a>
+            </li>
+            <img src="../assets/Logo_Kidz_club-removebg-preview.png" alt="" />
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Booking Section -->
+    <section class="booking-section container">
+      <h1>Booking</h1>
+      <div class="booking-section-grid">
+        <div class="booking-form">
+          <form action="">
+            <h2>Booking Form</h2>
+            <div>
+              <span> <i class="far fa-envelope"></i></span>
+
+              <input type="email" placeholder="email@gmail.com" />
+            </div>
+            <div>
+              <span><i class="far fa-unlock-alt"></i></span>
+              <input type="password" placeholder="*******" />
+            </div>
+
+            <button class="login-btn">Login</button>
+          </form>
+        </div>
+        <div class="activity-details">
+          <div class="activity-details-box">
+            <h2>Activity Details</h2>
+            <h3>Hiking Details</h3>
+            <div class="activity-dateBook">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2410.7912364948693!2d-1.3116542999999998!3d52.826126249999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879e5ccfade0e71%3A0x8f45d3812d9d4a4e!2sPegasus%20Business%20Park%2C%20Herald%20Way%2C%20Castle%20Donington%2C%20Derby%20DE74%202TZ%2C%20UK!5e0!3m2!1sen!2s!4v1715110781966!5m2!1sen!2s"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div>
+                <form action="">
+                  <div class="calendar-box">
+                    <h4 class="calendar-title">Select a Date</h4>
+                    <input
+                      type="text"
+                      id="dateInput"
+                      placeholder="Select a date"
+                    />
+                    <div class="calendar" id="calendar">
+                      <div class="header">
+                        <button id="prevBtn">&lt;</button>
+                        <h2 id="monthYear">Month Year</h2>
+                        <button id="nextBtn">&gt;</button>
+                      </div>
+                      <div class="days" id="daysContainer"></div>
+                    </div>
+                  </div>
+                  <button class="book-btn">Book Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bottom Header -->
+    <section class="bottom-header">
+      <div>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="../index.html">Activities</a>
+          <a href="../index.html">About Us </a>
+          <a href="./booking.html">Bookings </a>
+        </nav>
+      </div>
+    </section>
+  </body>
+  <script src="../js/function.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+
+  <script>
+    const daysContainer = document.getElementById("daysContainer");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const monthYear = document.getElementById("monthYear");
+    const dateInput = document.getElementById("dateInput");
+    const calendar = document.getElementById("calendar");
+
+    let currentDate = new Date();
+    let selectedDate = null;
+
+    function handleDayClick(day) {
+      selectedDate = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        day
+      );
+      dateInput.value = selectedDate.toLocaleDateString("en-US");
+      calendar.style.display = "none";
+      renderCalendar();
+    }
+
+    function createDayElement(day) {
+      const date = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        day
+      );
+      const dayElement = document.createElement("div");
+      dayElement.classList.add("day");
+
+      if (date.toDateString() === new Date().toDateString()) {
+        dayElement.classList.add("current");
+      }
+      if (selectedDate && date.toDateString() === selectedDate.toDateString()) {
+        dayElement.classList.add("selected");
+      }
+
+      dayElement.textContent = day;
+      dayElement.addEventListener("click", () => {
+        handleDayClick(day);
+      });
+      daysContainer.appendChild(dayElement);
+    }
+
+    function renderCalendar() {
+      daysContainer.innerHTML = "";
+      const firstDay = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        1
+      );
+      const lastDay = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth() + 1,
+        0
+      );
+
+      monthYear.textContent = `${currentDate.toLocaleString("default", {
+        month: "long",
+      })} ${currentDate.getFullYear()}`;
+
+      for (let day = 1; day <= lastDay.getDate(); day++) {
+        createDayElement(day);
+      }
+    }
+
+    prevBtn.addEventListener("click", () => {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      renderCalendar();
+    });
+
+    dateInput.addEventListener("click", () => {
+      calendar.style.display = "block";
+      positionCalendar();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !dateInput.contains(event.target) &&
+        !calendar.contains(event.target)
+      ) {
+        calendar.style.display = "none";
+      }
+    });
+
+    function positionCalendar() {
+      const inputRect = dateInput.getBoundingClientRect();
+      calendar.style.top = inputRect.bottom + "px";
+      calendar.style.left = inputRect.left + "px";
+    }
+
+    window.addEventListener("resize", positionCalendar);
+
+    renderCalendar();
+  </script>
+  <script>
+    const login_btn = document.querySelector(".login-btn");
+    login_btn.addEventListener("click", () => {
+      alert("Sign up First");
+    });
+  </script>
+</html>

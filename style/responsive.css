@@ -1,0 +1,185 @@
+@media (max-width: 1200px) {
+  .booking-section-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .booking-form {
+    width: 400px;
+    border-radius: 8px;
+  }
+  .booking-section h1 {
+    font-size: 3.2rem;
+    margin: 50px 0 30px 0;
+  }
+  .activity-details {
+    width: 600px;
+    border-radius: 8px;
+  }
+  .activity-dateBook {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 25px;
+  }
+  .activity-dateBook div iframe {
+    height: 300px;
+  }
+  .calendar-box {
+    margin: 0 auto;
+  }
+  .activity-details h3 {
+    text-align: center;
+  }
+  .calendar-box {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 150px;
+  }
+  .header-box {
+    padding: 5px 0;
+  }
+
+  .navlinks > li {
+    margin: 0 0 0 20px;
+  }
+  .swiper {
+    height: 60vh;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-slide-content h1 {
+    font-size: 4.3rem;
+    line-height: 4.3rem;
+  }
+
+  .swiper-slide-content button {
+    margin-top: 18px;
+  }
+
+  .swiper-slide-content button a {
+    font-size: 2rem;
+  }
+  .reminder-box {
+    bottom: 15px;
+    right: 15px;
+  }
+  .reminder-box p {
+    font-size: 1.5rem;
+    padding: 19px 15px;
+  }
+  .booking-section-grid {
+    margin: 0 0 100px 0;
+  }
+
+  .booking-section h1 {
+    font-size: 3.1rem;
+    margin: 40px 0 30px 0;
+  }
+
+  .activity-dateBook div iframe {
+    height: 300px;
+  }
+
+  .activity-details h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 110px;
+  }
+  .header-box {
+    padding: 0 0;
+  }
+
+  .navlinks > li {
+    margin: 0 0 0 20px;
+  }
+
+  .swiper {
+    height: 50vh;
+  }
+
+  .swiper-slide-content h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .swiper-slide-content button a {
+    font-size: 1.8rem;
+  }
+  .booking-form {
+    width: 100%;
+    padding: 30px 18px;
+  }
+  .booking-section h1 {
+    font-size: 2.7rem;
+    margin: 40px 0 20px 0;
+  }
+  .activity-details {
+    width: 100%;
+    padding: 30px 18px;
+  }
+  .calendar-box {
+    width: 100%;
+  }
+
+  .calendar-title {
+    font-size: 18px !important;
+    margin-bottom: 7px !important;
+    color: #333;
+  }
+
+  .calendar {
+    width: 70%;
+  }
+  .booking-form h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+  .activity-details h2 {
+    font-size: 2.1rem;
+    margin-bottom: 15px;
+  }
+  .activity-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 13px;
+  }
+  .book-btn {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .navlinks ion-icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .navlinks .items {
+    display: none;
+  }
+  .bottom-header {
+    display: none;
+    z-index: 0;
+  }
+  .reminder-box {
+    z-index: 10;
+  }
+  header {
+    background-color: #8c9e5e;
+  }
+}
