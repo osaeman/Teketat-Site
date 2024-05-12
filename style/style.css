@@ -232,6 +232,9 @@ header {
 .booking-header .navlinks > li > a::before {
   background-color: white;
 }
+.bg-header {
+  background-color: var(--clr-6);
+}
 /* --------------Hero Section --------------*/
 /* -------------Main Swiper ----------------*/
 .swiper {
@@ -618,4 +621,124 @@ footer {
 
 .footer-bottom nav a:hover {
   color: var(--clr-4);
+}
+
+/* ------------Privacy Policy Section --------------*/
+.privacyPolicy-section {
+  margin: 150px auto 100px auto;
+}
+
+.privacyPolicy-section h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 6.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: var(--clr-7);
+  margin-bottom: 50px;
+}
+.privacyPolicy-section h1 span {
+  color: var(--clr-3);
+}
+
+.privacyPolicy-section h3 {
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  color: var(--clr-6);
+}
+
+.privacyPolicy-section p {
+  margin-bottom: 13px;
+  line-height: 26px;
+}
+
+.privacyPolicy-section > span {
+  font-weight: 600;
+}
+
+.privacyPolicy-section > ul li {
+  list-style-type: upper-alpha;
+  list-style-position: inside;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.privacyPolicy-section > ul li > span {
+  display: block;
+  font-weight: 400;
+}
+
+/*------------- FAQ Page----------------- */
+
+/* ---------FAQ Accordian------- */
+
+.faq-section {
+  background-color: white;
+  margin: 190px auto 100px auto;
+}
+.faq-section-container {
+  width: 800px;
+  max-width: 92%;
+  margin: 0 auto;
+}
+.faq-section h1 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 4.6rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: var(--clr-6);
+  margin-bottom: 50px;
+}
+.accordion {
+  width: 100%;
+  margin: 0;
+  color: var(--clr-6);
+  background-color: var(--clr-9);
+  margin-bottom: 20px;
+  padding: 0 25px;
+  border-radius: 6px;
+}
+
+.accordion-title {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordion-title h3 {
+  font-size: 1.8rem;
+  padding-right: 14px;
+}
+
+.accordion-toggle {
+  font-size: 2.3rem;
+  position: relative;
+  display: block;
+}
+.plus {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.plus-appear {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  transform: rotate(90deg);
+}
+.accordion-content {
+  display: none;
+  padding: 0 0 20px 0;
+}
+.accordion-content p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5px;
 }

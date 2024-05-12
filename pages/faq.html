@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>Teketat | FAQs</title>
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/responsive.css" />
+  </head>
+  <body>
+    <!--------------------Header--------------------->
+    <header class="bg-header">
+      <div class="container header-box">
+        <img src="../assets/logo@0.5x.png" alt="" class="logo" />
+        <nav>
+          <ul class="navlinks">
+            <li class="items"><a href="../index.html">Home</a></li>
+            <li class="items"><a href="../index.html">Sports</a></li>
+            <li class="items">
+              <a href="../index.html">Music </a>
+            </li>
+            <li class="items">
+              <a href="../index.html">General </a>
+            </li>
+            <li class="items">
+              <a href="../index.html">Technology </a>
+            </li>
+            <li class="items">
+              <a href="../index.html">Contact </a>
+            </li>
+            <li onclick="showSidebar()" class="hamburger-icon">
+              <ion-icon name="menu-outline"></ion-icon>
+            </li>
+          </ul>
+          <ul class="sidebar">
+            <li onclick="closeSidebar()" class="close-icon">
+              <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+            </li>
+            <li class="items"><a href="../index.html">Home</a></li>
+            <li class="items"><a href="../index.html">Sports</a></li>
+            <li class="items">
+              <a href="../index.html">Music </a>
+            </li>
+            <li class="items">
+              <a href="../index.html">General </a>
+            </li>
+            <li class="items">
+              <a href="../index.html">Technology </a>
+            </li>
+            <li class="items">
+              <a href="../index.html">Contact </a>
+            </li>
+            <img src="../assets/logo@0.5x.png" alt="" />
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="faq-section container">
+      <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      <div class="faq-section-container">
+        <div class="accordion accordian-1">
+          <div class="accordion-title" id="accordian_1">
+            <h3>Are tickets changeable?</h3>
+            <span class="accordion-toggle">
+              <i class="fal fa-minus"></i>
+              <i class="fal fa-minus plus"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Tickets are non-refundable and unchangeable. We regret to inform
+              you that no seats can be changed and tickets cannot be assigned to
+              another date or time after the payment is completed as per event
+              organizer instructions.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-title" id="accordian_2">
+            <h3>I want to change the payment method.</h3>
+            <span class="accordion-toggle">
+              <i class="fal fa-minus"></i>
+              <i class="fal fa-minus plus"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Please call us on +962788807744 or email support@teketat.com. We
+              can change payment methods of unpaid orders.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-title" id="accordian_3">
+            <h3>
+              My Credit card is rejected and my payment is not going through.
+            </h3>
+            <span class="accordion-toggle">
+              <i class="fal fa-minus"></i>
+              <i class="fal fa-minus plus"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Please check if your card holds sufficient funds to complete the
+              payment and make sure all data entered about the card is correct
+              (card number, expiry date etc...). If these conditions do not
+              apply, try paying with another card. Our Merchant Account declines
+              some cards due to security reasons.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-title" id="accordian_4">
+            <h3>
+              My payment is successful but I still have not received my tickets.
+            </h3>
+            <span class="accordion-toggle">
+              <i class="fal fa-minus"></i>
+              <i class="fal fa-minus plus"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              It is always recommended that you use a personal email (Gmail,
+              Hotmail or Yahoo). Some business accounts have strict firewall
+              rules, so emails sent from sajilni.com might end up flagged as
+              promotion and added to spam. Please check the spam emails, if you
+              still cannot find the email with your tickets, please contact us
+              and provide us with another email address on which we can resend
+              the tickets. If you find it in spam, please add Sajilni to your
+              safe list to ensure receipt of any future emails.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-title" id="accordian_5">
+            <h3>Why is Cash on Delivery (COD) - Amman Only?</h3>
+            <span class="accordion-toggle">
+              <i class="fal fa-minus"></i>
+              <i class="fal fa-minus plus"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Cash on Delivery is a payment method provided by Teketat through a
+              third party delivery company. This method allows you to place your
+              order online and pay cash at home. The delivery company will
+              contact you to schedule a pickup time. You have to comply with the
+              deadline to pay. You will receive a receipt and your e-tickets
+              will be sent to the email mentioned in your order within 1
+              business day. Buyers are charged 5 JDs for Cash on Delivery per
+              order not per ticket.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------- Footer-------------------->
+    <footer>
+      <div class="footer-box">
+        <div class="footer-top container">
+          <img src="../assets/logo@0.5x.png" alt="" />
+          <div>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <hr class="container" />
+        <div class="footer-bottom container">
+          <p>Copyright © 2024. All Rights Reserved By Teketat</p>
+          <div>
+            <nav>
+              <a href="">Term Of Use</a>
+              <a href="./privacy.html">Privacy Policy</a>
+              <a href="./faq.html">FAQ</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/function.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script>
+    // JavaScript code to toggle the accordion
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach((accordion) => {
+      const title = accordion.querySelector(".accordion-title");
+      const content = accordion.querySelector(".accordion-content");
+      const toggle = title.querySelector(".accordion-toggle");
+      const plus = accordion.querySelector(".plus");
+
+      title.addEventListener("click", (e) => {
+        // Close all other accordions
+        accordions.forEach((otherAccordion) => {
+          if (otherAccordion !== accordion) {
+            otherAccordion.querySelector(".accordion-content").style.display =
+              "none";
+            otherAccordion
+              .querySelector(".plus")
+              .classList.remove("plus-appear");
+          }
+        });
+
+        if (content.style.display === "none" || content.style.display === "") {
+          content.style.display = "block";
+          plus.classList.add("plus-appear");
+        } else {
+          content.style.display = "none";
+          plus.classList.remove("plus-appear");
+        }
+      });
+    });
+  </script>
+</html>

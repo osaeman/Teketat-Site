@@ -31,6 +31,22 @@
   .booking-fields > div > div input {
     height: 45px;
   }
+  .privacyPolicy-section h1 {
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+  }
+  .privacyPolicy-section {
+    margin: 120px auto 100px auto;
+  }
+  .faq-section {
+    background-color: white;
+    margin: 160px auto 100px auto;
+  }
+
+  .faq-section h1 {
+    font-size: 3.8rem;
+    line-height: 4rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -132,6 +148,36 @@
     align-items: center;
     padding-top: 30px;
     row-gap: 20px;
+  }
+  .privacyPolicy-section h1 {
+    font-size: 4.2rem;
+    line-height: 4.6rem;
+    margin-bottom: 40px;
+  }
+  .privacyPolicy-section h3 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  .faq-section h1 {
+    font-size: 3.2rem;
+    line-height: 3.4rem;
+  }
+  .accordion-title {
+    padding: 15px 0;
+  }
+  .accordion-title h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  .accordion-toggle {
+    font-size: 2rem;
+  }
+  .accordion-content p {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    letter-spacing: normal;
   }
 }
 
@@ -269,6 +315,32 @@
   .footer-bottom p {
     font-size: 1.4rem;
     text-align: center;
+  }
+  .privacyPolicy-section h1 {
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+    margin-bottom: 40px;
+  }
+  .privacyPolicy-section h3 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .faq-section {
+    margin: 120px auto 100px auto;
+  }
+
+  .faq-section h1 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    margin-bottom: 25px;
+  }
+  .accordion-title h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .accordion {
+    padding: 0 15px;
   }
 }
 
